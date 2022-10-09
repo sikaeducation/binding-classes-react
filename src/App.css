@@ -1,38 +1,44 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  height: 100vh;
+  margin-top: -30px;
+  background-color: hsl(240, 5%, 99%);
 }
 
-.App-link {
-  color: #61dafb;
+.lightbulb {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  margin-top: 100px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.lightbulb.on {
+  background-image: radial-gradient(hsl(0, 70%, 60%), hsl(0, 70%, 50%));
+  box-shadow: 0 0 100px hsl(0, 80%, 50%);
+  border: none;
+}
+
+.lightbulb.off {
+  background-color: hsl(0, 0%, 90%);
+  box-shadow: 0 2px 2px hsl(0, 0%, 70%);
+}
+
+.switch {
+  padding: 12px 24px;
+  border: none;
+  color: hsl(240, 30%, 10%);
+  box-shadow: 0 2px 2px hsl(240, 10%, 80%);
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.switch.on {
+  background-color: hsl(240, 30%, 90%);
+}
+.switch.off {
+  background-color: hsl(0, 30%, 90%);
 }
