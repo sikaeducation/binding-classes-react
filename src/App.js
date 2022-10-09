@@ -1,27 +1,16 @@
 import './App.css';
-import classNames from 'classnames';
 import {useState} from 'react';
+import Switch from './Switch';
+import Light from './Light';
 
 function App() {
-  const [lightOn, setLightOn] = useState(false)
+  const [lightOn, setLightOn] = useState(false);
+
   return (
     <div className="App">
       <div>
-        <button
-          onClick={() => setLightOn(!lightOn)}
-          className={classNames({
-            switch: true,
-            on: !lightOn,
-            off: lightOn,
-          })}
-        >{ lightOn ? "Turn Off" : "Turn On"}</button>
-        <div
-          className={classNames({
-            lightbulb: true,
-            on: lightOn,
-            off: !lightOn,
-          })}
-        >&nbsp;</div>
+        <Switch on={lightOn} action={setLightOn} />
+        <Light on={lightOn} />
       </div>
     </div>
   );

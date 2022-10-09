@@ -6,39 +6,3 @@
   margin-top: -30px;
   background-color: hsl(240, 5%, 99%);
 }
-
-.lightbulb {
-  height: 200px;
-  width: 200px;
-  border-radius: 50%;
-  margin-top: 100px;
-}
-
-.lightbulb.on {
-  background-image: radial-gradient(hsl(0, 70%, 60%), hsl(0, 70%, 50%));
-  box-shadow: 0 0 100px hsl(0, 80%, 50%);
-  border: none;
-}
-
-.lightbulb.off {
-  background-color: hsl(0, 0%, 90%);
-  box-shadow: 0 2px 2px hsl(0, 0%, 70%);
-}
-
-.switch {
-  padding: 12px 24px;
-  border: none;
-  color: hsl(240, 30%, 10%);
-  box-shadow: 0 2px 2px hsl(240, 10%, 80%);
-  display: block;
-  margin: 0 auto;
-  cursor: pointer;
-  text-transform: uppercase;
-}
-
-.switch.on {
-  background-color: hsl(240, 30%, 90%);
-}
-.switch.off {
-  background-color: hsl(0, 30%, 90%);
-}
