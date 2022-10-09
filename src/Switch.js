@@ -1,15 +1,10 @@
 import './Switch.css';
-import classNames from 'classnames';
 
 function Switch({on, action}) {
   return (
     <button
       onClick={() => action(!on)}
-      className={classNames({
-        Switch: true,
-        on: !on,
-        off: on,
-      })}
+      className="Switch"
     >{ on ? "Turn Off" : "Turn On"}</button>
   );
 }
